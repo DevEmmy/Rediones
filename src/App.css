@@ -110,10 +110,21 @@ body{
   }
 
   .stories_component{
-    font-size: 0.4rem;
+    font-size: 0.34rem;
+    padding: 20px;
   }
 
   .main_stories{
     overflow-y: scroll;
+    display: flex;
+    gap: 20px;
+  }
+
+  .story > img{
+    border-radius: 50%;
+    height: 100px;
+    border: 5;.px dotted rgb(0,200,100);
+    width: 100px;
+    object-fit: cover;
   }
 }
