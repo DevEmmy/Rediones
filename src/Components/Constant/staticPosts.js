@@ -8,7 +8,7 @@ const staticPosts = [
         content: `Instagram like but different in idea app. Pictures, Videos, Posting challenges and taking on them as well.
         Chatting, Messaging with other users, Get notifications inside the app, See Stats on the Dashboard Screen.`,
         date: `${new Date().toDateString()}`,
-        contentImage: img,
+        contentImage: null,
 
     },
     {

@@ -19,7 +19,7 @@ function Posts() {
 
                         <div className="post_content">
                             <p>{post.content}</p>
-                            <img src={post.image} alt="" />
+                            {post.contentImage && <img src={post.contentImage} alt="" />}
                         </div>
                     </div>
                 )
