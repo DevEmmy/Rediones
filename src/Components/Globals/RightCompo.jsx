@@ -1,4 +1,5 @@
 import React from 'react'
+import otherTools from '../Constant/otherTools'
 import stories from '../Constant/staticStories'
 
 function RightCompo() {
@@ -21,7 +22,19 @@ function RightCompo() {
           </div>
         </div>
 
-        
+        <div className="other_tools">
+          {
+            otherTools.map((i)=>{
+              return(
+                <div key={i.id} className="tools">
+                  {i.title}
+                </div>
+              )
+            })
+          }
+        </div>
+
+
     </div>
   )
 }

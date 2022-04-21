@@ -253,6 +253,17 @@ body{
   object-fit: cover;
 }
 
+/* Other Tools */
+.other_tools{
+  width: 80%;
+  margin: 20px auto;
+  height: 30vh;
+  overflow-y: scroll;
+  font-size: 0.23rem;
+  display: grid;
+  gap: 20px;
+}
+
 @media screen and (max-width: 500px) {
   .nav_icons_items{
     display: none;
