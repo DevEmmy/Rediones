@@ -1,4 +1,5 @@
 import React from 'react'
+import section from '../Constant/sections'
 import user from '../Constant/user'
 
 function SideProfile() {
@@ -20,6 +21,18 @@ function SideProfile() {
             <p className="bio">
               {user.bio}
             </p>
+        </div>
+
+        <div className="sections">
+          {
+            section.map((section)=>{
+              return(
+                <div key={section.id} className="section">
+                  {section.title}
+                </div>
+              )
+            })
+          }
         </div>
     </div>
   )
