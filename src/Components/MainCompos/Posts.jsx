@@ -4,6 +4,7 @@ import staticPosts from '../Constant/staticPosts'
 function Posts() {
   return (
     <div className='posts'>
+        <h3>Feeds</h3>
         {
             staticPosts.map((post)=>{
                 return(

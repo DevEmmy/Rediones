@@ -104,11 +104,37 @@ body{
   object-fit: cover;
 }
 
+.show_story{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show_story > img{
+  width: 40%;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0vh auto;
+  z-index: 999;
+}
 /* Posts */
-.post{
+.posts{
   width: 92%;
+  margin: 0 auto;
+}
+
+.post{
+  width: 100%;
   font-size: 0.2rem;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 16px;
   background: white;
   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
@@ -153,6 +179,13 @@ body{
   object-fit: cover;
   border-radius: 20px;
 }
+
+.posts > h3{
+  font-size: 0.6rem;
+  padding: 0;
+
+  color: rgb(60,60,60);
+} 
 
 /* Main Division */
 .main_division{
@@ -244,6 +277,7 @@ body{
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   row-gap: 0px;
+  margin-top: 10px;
 }
 
 .trend > img{
@@ -255,14 +289,22 @@ body{
 
 /* Other Tools */
 .other_tools{
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
-  height: 30vh;
-  overflow-y: scroll;
   font-size: 0.23rem;
   display: grid;
+  /* align-items: flex-end;
+  justify-content: end; */
   gap: 20px;
+  padding: 30px 0;
 }
+
+.tools{
+  /* color: red;
+  cursor: pointer; */
+}
+
+
 
 @media screen and (max-width: 500px) {
   .nav_icons_items{
@@ -317,9 +359,19 @@ body{
 
   .story > img{
     border-radius: 50%;
-    height: 100px;
-    border: 5px dotted rgb(0,200,100);
-    width: 100px;
-    object-fit: cover;
+  height: 100px;
+  padding: 3px;
+  border: 2px solid rgb(0,200,100);
+  width: 100px;
+  object-fit: cover;
+  }
+
+  .show_story{
+    background-color: black;
+  }
+  .show_story > img{
+    width: 94%;
+    height: 90vh;
+    margin: 5vh auto;
   }
 }
