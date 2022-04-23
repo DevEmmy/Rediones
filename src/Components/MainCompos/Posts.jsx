@@ -1,5 +1,6 @@
 import React from 'react'
 import staticPosts from '../Constant/staticPosts'
+import { AiFillMessage, AiOutlineLike, AiOutlineShareAlt } from "react-icons/ai";
 
 function Posts() {
   return (
@@ -21,6 +22,20 @@ function Posts() {
                         <div className="post_content">
                             <p>{post.content}</p>
                             {post.contentImage && <img src={post.contentImage} alt="" />}
+                        </div>
+
+                        <div className="icons">
+                            <div className="like_sec">
+                                <AiOutlineLike />
+                            </div>
+
+                            <div className="comment_sec">
+                                <AiFillMessage />
+                            </div>
+
+                            <div className="share_sec">
+                                <AiOutlineShareAlt />
+                            </div>
                         </div>
                     </div>
                 )

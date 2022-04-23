@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import stories from '../Constant/staticStories'
 
 function Stories() {
@@ -17,6 +17,10 @@ function Stories() {
     const turnStatus = ()=>{
         setTimeout(setImg(null), 3000)
     }
+
+    useEffect(()=>{
+        setTimeout(setImg(null), 30000)
+    },[img])
 
 
 
